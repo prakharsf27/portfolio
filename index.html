@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prakhar Pratap Singh | Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Prakhar Pratap Singh - Full-Stack Developer specializing in MERN stack and Angular. Explore internships, creative AI projects, and interactive resume chat.">
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <!-- Glowing Auroras in background -->
+  <div class="aurora-container">
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar-header">
+    <div class="navbar-container">
+      <a href="#hero" class="navbar-logo">
+        <span class="gradient-text">Prakhar</span><span class="logo-dot">.dev</span>
+      </a>
+      
+      <nav class="nav-links-container">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#chatbot" class="nav-link">AI Twin</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button id="theme-toggle" class="icon-button" aria-label="Toggle visual theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+        <button class="hamburger-menu icon-button" aria-label="Toggle mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay">
+    <button class="close-mobile-nav icon-button" aria-label="Close mobile menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="mobile-nav-links">
+      <a href="#hero" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#chatbot" class="mobile-link">AI Twin Chatbot</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section section-padding">
+      <div class="hero-grid container">
+        <div class="hero-text-content reveal-up">
+          <span class="hero-eyebrow"><i class="fa-solid fa-terminal"></i> Ready to build & scale</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Prakhar Pratap Singh</span>
+          </h1>
+          <div class="hero-subtitle">
+            I am a <span id="typewriter-text" class="typewriter-glow"></span><span class="typewriter-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            A results-driven Full-Stack Developer specializing in high-performance **MERN** and **Angular** systems. Passionate about engineering responsive layouts, crafting defensive codebases, and integrating AI to solve complex user challenges.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="button button-primary">
+              <i class="fa-solid fa-briefcase"></i> View Projects
+            </a>
+            <a href="#chatbot" class="button button-secondary glow-pulse">
+              <i class="fa-solid fa-robot"></i> Ask My AI Twin
+            </a>
+            <a href="#contact" class="button button-tertiary">
+              Get in Touch <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual reveal-scale">
+          <div class="image-wrapper-glass">
+            <img src="hero_bg.png" alt="Creative abstract coding node render" class="hero-image">
+            <div class="floating-badge badge-1">
+              <i class="fa-brands fa-react tech-react"></i>
+              <span>React 19</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fa-brands fa-angular tech-angular"></i>
+              <span>Angular</span>
+            </div>
+            <div class="floating-badge badge-3">
+              <i class="fa-brands fa-node-js tech-node"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="floating-badge badge-4">
+              <i class="fa-solid fa-database tech-mongo"></i>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding section-border-top">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A look into my education, core skill set, and credentials.</p>
+        </div>
+
+        <div class="about-grid reveal-up">
+          <!-- Glass Bio Card -->
+          <div class="bio-glass-card">
+            <div class="bio-header">
+              <div class="bio-avatar">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+              <div class="bio-info">
+                <h3>Prakhar Pratap Singh</h3>
+                <p>Computer Science Student & Engineer</p>
+              </div>
+            </div>
+            <p class="bio-text">
+              I am currently pursuing a **B.Tech in Computer Science & Engineering (3rd Year)** at **Alliance University**, Bangalore. I maintain a **CGPA of 8.2/10** and have acquired hands-on experience building production-ready architectures, writing cross-device responsive styles, and optimizing client-side performance.
+            </p>
+            <div class="bio-quick-metrics">
+              <div class="metric-box">
+                <span class="metric-val">8.2</span>
+                <span class="metric-label">CGPA</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">2+</span>
+                <span class="metric-label">Internships</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">5+</span>
+                <span class="metric-label">Core Techs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Tabs -->
+          <div class="tabs-container-glass">
+            <div class="tabs-header">
+              <button class="tab-button active" data-tab="skills">
+                <i class="fa-solid fa-gears"></i> Skills
+              </button>
+              <button class="tab-button" data-tab="education">
+                <i class="fa-solid fa-graduation-cap"></i> Education
+              </button>
+              <button class="tab-button" data-tab="credentials">
+                <i class="fa-solid fa-award"></i> Certifications
+              </button>
+            </div>
+            
+            <div class="tabs-content">
+              <!-- Skills Tab -->
+              <div id="tab-skills" class="tab-pane active">
+                <div class="skills-categories-grid">
+                  <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                      <span class="skill-tag-item"><i class="fa-brands fa-react"></i> React.js (v19)</span>
+                      <span class="skill-tag-item"><i class="fa-brands fa-angular"></i> Angular</span>
+                      <span class="skill-tag-item"><i class="fa-brands fa-html5"></i> HTML5/CSS3</span>
+                      <span class="skill-tag-item"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+                      <span class="skill-tag-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                    </div>
+                  </div>
+                  <div class="skill-category">
+                    <h4>Backend & Databases</h4>
+                    <div class="skill-tags">
+                      <span class="skill-tag-item"><i class="fa-brands fa-node"></i> Node.js</span>
+                      <span class="skill-tag-item"><i class="fa-solid fa-network-wired"></i> Express.js</span>
+                      <span class="skill-tag-item"><i class="fa-solid fa-database"></i> MongoDB</span>
+                      <span class="skill-tag-item"><i class="fa-solid fa-table"></i> SQL</span>
+                      <span class="skill-tag-item"><i class="fa-solid fa-shield-halved"></i> JWT & Auth</span>
+                    </div>
+                  </div>
+                  <div class="skill-category">
+                    <h4>Languages & Tools</h4>
+                    <div class="skill-tags">
+                      <span class="skill-tag-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+                      <span class="skill-tag-item"><i class="fa-solid fa-code"></i> TypeScript</span>
+                      <span class="skill-tag-item"><i class="fa-brands fa-python"></i> Python</span>
+                      <span class="skill-tag-item"><i class="fa-brands fa-java"></i> Java / C++</span>
+                      <span class="skill-tag-item"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                      <span class="skill-tag-item"><i class="fa-solid fa-server"></i> Cloudinary</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Education Tab -->
+              <div id="tab-education" class="tab-pane">
+                <div class="education-list">
+                  <div class="edu-item">
+                    <span class="edu-date">2023 – 2027</span>
+                    <h5>B.Tech in Computer Science & Engineering</h5>
+                    <p class="edu-org">Alliance University, Bangalore</p>
+                    <p class="edu-meta">Current CGPA: **8.2/10** | Relevant coursework: DSA, Operating Systems, DBMS, Network Security, OOPS, Web Development.</p>
+                  </div>
+                  <div class="edu-item">
+                    <span class="edu-date">2021 – 2023</span>
+                    <h5>High School & Intermediate</h5>
+                    <p class="edu-org">City Montessori School, Lucknow</p>
+                    <p class="edu-meta">ICSE 10th Standard: **92.8%** | ISC 12th Standard: **91.6%**</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Credentials Tab -->
+              <div id="tab-credentials" class="tab-pane">
+                <div class="credentials-list">
+                  <div class="cred-item">
+                    <i class="fa-brands fa-oracle cred-icon"></i>
+                    <div>
+                      <h5>Java Foundations Associate</h5>
+                      <p class="cred-issuer">Oracle Certification</p>
+                    </div>
+                  </div>
+                  <div class="cred-item">
+                    <i class="fa-brands fa-ibm cred-icon"></i>
+                    <div>
+                      <h5>Front-End with React</h5>
+                      <p class="cred-issuer">IBM Professional Credentials</p>
+                    </div>
+                  </div>
+                  <div class="cred-item">
+                    <i class="fa-brands fa-ibm cred-icon"></i>
+                    <div>
+                      <h5>Operating Systems Specialization</h5>
+                      <p class="cred-issuer">IBM Credential Badge</p>
+                    </div>
+                  </div>
+                  <div class="cred-item">
+                    <i class="fa-solid fa-award cred-icon"></i>
+                    <div>
+                      <h5>C++ Programming Specialization</h5>
+                      <p class="cred-issuer">Academic Specialization Cert</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience-section section-padding section-border-top">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Work History</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Timeline of my industry internships and contributions.</p>
+        </div>
+
+        <div class="timeline-container reveal-up">
+          <!-- Timeline Vertical Line -->
+          <div class="timeline-line"></div>
+          
+          <!-- Experience Card 1 -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot-glow"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Mar 2026 – Jun 2026</span>
+              <h3>Angular.js Developer Intern</h3>
+              <h4 class="company-name">OGGANGS Pvt. Ltd. <span class="badge-role">Remote</span></h4>
+              <ul class="timeline-bullets">
+                <li>Ramped up on Angular from scratch within days, writing features across a live, multi-region codebase serving Europe and the US.</li>
+                <li>Rebuilt complex UI sections using Angular + Bootstrap, ensuring visual consistency and cross-device responsiveness.</li>
+                <li>Boosted Lighthouse performance from **~50 to 90+** via lazy loading, code-splitting, and asset optimization.</li>
+                <li>Implemented in-app i18n translation systems, allowing seamless language switching without refreshing pages.</li>
+                <li>Collaborated in agile sprints, participating in mentor-driven PR reviews and fixing production-level bugs.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">i18n</span>
+                <span class="tag">Web Performance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot-glow"></div>
+            <div class="timeline-content-card">
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> May 2024 – Jul 2024</span>
+              <h3>Web Development Intern</h3>
+              <h4 class="company-name">Trivialworks Solutions Pvt. Ltd. <span class="badge-role">On-Site</span></h4>
+              <ul class="timeline-bullets">
+                <li>Began with raw HTML/CSS, subsequently learning Bootstrap and responsive layouts to build mobile-friendly web pages.</li>
+                <li>Developed habits around writing defensive frontend code, handling layout edge cases, error states, and exception views.</li>
+                <li>Executed pre-deployment validation: cross-browser compatibility testing, layout regression reviews, and basic QA tasks.</li>
+                <li>Participated in pull request (PR) code discussions, learning standard optimization policies used by professional developer squads.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Cross-Browser QA</span>
+                <span class="tag">Defensive UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding section-border-top">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built to solve problems and showcase tech integration.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Featured Project: TalentFlow AI -->
+          <div class="project-card-featured reveal-up">
+            <div class="project-card-image-panel">
+              <div class="featured-glow-overlay"></div>
+              <div class="featured-project-badge"><i class="fa-solid fa-circle-nodes"></i> Featured Project</div>
+              <div class="tech-icon-circle"><i class="fa-brands fa-react"></i></div>
+            </div>
+            <div class="project-card-content-panel">
+              <h3>TalentFlow AI</h3>
+              <p class="project-tech-stack">MERN Stack | React 19 · Node.js · MongoDB · Tailwind CSS 4 · Framer Motion · Radix UI</p>
+              <p class="project-desc">
+                An advanced AI-powered recruitment management system built to streamline job hunting and application pipeline operations. 
+              </p>
+              <ul class="featured-features">
+                <li><strong>AI Auto-Pilot:</strong> Scans job descriptions, matches ATS keywords, and uses Claude AI to draft custom cover letters and automate batch submissions.</li>
+                <li><strong>AI Salary Coach:</strong> Evaluates offer parameters and competitive leverage to construct customized negotiation scripts.</li>
+                <li><strong>Visual Intelligence:</strong> Graphs application pipelines with Chart.js and maps compensations with Recharts area visualizations.</li>
+                <li><strong>Security & Middleware:</strong> Hardened with JWT/Bcrypt security, Cloudinary uploads, and Nodemailer email notification alerts.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://talentflowai-blush-iota.vercel.app" target="_blank" rel="noopener noreferrer" class="button button-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+                <span class="github-coming-soon"><i class="fa-brands fa-github"></i> Repository Secure</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Network Security Suite -->
+          <div class="project-card reveal-up">
+            <div class="project-icon-header">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Network Port & Security Analyzer</h3>
+            <p class="project-card-stack">Java | Network Sockets · Multithreading · Cryptography</p>
+            <p class="project-card-text">
+              A multithreaded network utility tool designed to analyze port vulnerabilities, verify certificates, and model packet security checks using cryptographic algorithms.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-badge-tag"><i class="fa-solid fa-microchip"></i> Coursework</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Smart Condition IoT Dashboard -->
+          <div class="project-card reveal-up">
+            <div class="project-icon-header">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Smart Condition Monitoring Monitor</h3>
+            <p class="project-card-stack">Flutter | Dart · Express.js · IoT Sockets · Charts</p>
+            <p class="project-card-text">
+              An IoT companion app displaying real-time machinery vibration, temperature, and condition diagnostics using mobile graphs and web socket notifications.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-badge-tag"><i class="fa-solid fa-wifi"></i> IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Twin Chatbot Section -->
+    <section id="chatbot" class="chatbot-section section-padding section-border-top">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-robot"></i> Interactive AI</span>
+          <h2 class="section-title">Ask My AI Twin</h2>
+          <p class="section-subtitle">Interact with my digital resume twin to get immediate answers about my skills and experience.</p>
+        </div>
+
+        <div class="chatbot-container reveal-up">
+          <!-- Chat Sidebar (Questions) -->
+          <div class="chat-sidebar-glass">
+            <h4>Quick Action Queries</h4>
+            <p>Click any preset below to test my AI Twin immediately:</p>
+            <div class="preset-chips">
+              <button class="preset-chip-btn" data-query="Who are you and what do you study?">
+                <i class="fa-solid fa-circle-question"></i> Who are you?
+              </button>
+              <button class="preset-chip-btn" data-query="What did you do during your OGGANGS internship?">
+                <i class="fa-solid fa-code"></i> OGGANGS Internship
+              </button>
+              <button class="preset-chip-btn" data-query="Tell me about the TalentFlow AI project">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> TalentFlow AI Project
+              </button>
+              <button class="preset-chip-btn" data-query="What is your contact info?">
+                <i class="fa-solid fa-address-book"></i> Get Contact Details
+              </button>
+              <button class="preset-chip-btn" data-query="Do you have any certifications?">
+                <i class="fa-solid fa-award"></i> Certifications
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat window -->
+          <div class="chat-window-glass">
+            <div class="chat-window-header">
+              <div class="bot-avatar-active">
+                <i class="fa-solid fa-robot"></i>
+                <span class="online-indicator"></span>
+              </div>
+              <div class="bot-meta">
+                <h5>Prakhar's Digital Twin</h5>
+                <span>Online · Powered by Resume Data</span>
+              </div>
+            </div>
+            
+            <div id="chat-messages-box" class="chat-messages-area">
+              <!-- Initial bot message -->
+              <div class="chat-msg bot-msg">
+                <div class="msg-bubble">
+                  Hello! I am Prakhar's digital AI Twin. I've been seeded with his full resume database. Ask me anything about his projects, skills, coursework, or work history!
+                </div>
+                <span class="msg-time">Just now</span>
+              </div>
+            </div>
+
+            <form id="chat-input-form" class="chat-input-row">
+              <input type="text" id="chat-input-field" placeholder="Ask a question (e.g., 'What is your CGPA?')..." required autocomplete="off">
+              <button type="submit" class="chat-send-btn" aria-label="Send message">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding section-border-top">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a project, job posting, or question? Send me a message.</p>
+        </div>
+
+        <div class="contact-grid reveal-up">
+          <!-- Contact Info Glass Cards -->
+          <div class="contact-info-panel">
+            <div class="info-card-glass">
+              <div class="info-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <div class="info-card-details">
+                <h4>Email Me</h4>
+                <a href="mailto:pprakharbtech23@ced.alliance.edu.in" class="contact-link-hover">pprakharbtech23@ced.alliance.edu.in</a>
+                <a href="mailto:prakharnew45@gmail.com" class="contact-link-hover">prakharnew45@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="info-card-glass">
+              <div class="info-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-card-details">
+                <h4>Primary Locations</h4>
+                <p>Lucknow, Uttar Pradesh, India</p>
+                <p>Bangalore, Karnataka, India (Alliance Campus)</p>
+              </div>
+            </div>
+
+            <div class="info-card-glass">
+              <div class="info-card-icon"><i class="fa-solid fa-hashtag"></i></div>
+              <div class="info-card-details">
+                <h4>Social & Tech Presence</h4>
+                <div class="social-links-grid">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link-item github-color" aria-label="GitHub Profile">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-item linkedin-color" aria-label="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Glass Form Card -->
+          <div class="contact-form-glass">
+            <form id="portfolio-contact-form">
+              <div class="form-row-double">
+                <div class="form-group">
+                  <label for="form-name">Name</label>
+                  <input type="text" id="form-name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email</label>
+                  <input type="email" id="form-email" placeholder="Your email address" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="What is this regarding?" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="button button-primary width-full">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+            <div id="form-success-alert" class="success-alert-box hidden">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h5>Message Sent Successfully!</h5>
+                <p>Thank you for getting in touch. I will respond to your inquiry shortly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="portfolio-footer section-border-top">
+    <div class="container footer-grid">
+      <p class="copyright-text">
+        &copy; <span id="current-year">2026</span> Prakhar Pratap Singh. Engineered with raw passion.
+      </p>
+      <div class="footer-meta-stats">
+        <span><i class="fa-solid fa-bolt"></i> Speed Optimized</span>
+        <span><i class="fa-solid fa-code"></i> Clean Codebase</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
