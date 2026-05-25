@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Prakhar Pratap Singh - Full-Stack Developer",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prakharsf27/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "full-stack"
+  ],
+  "author": "Prakhar Pratap Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prakharsf27/portfolio/issues"
+  },
+  "homepage": "https://github.com/prakharsf27/portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
